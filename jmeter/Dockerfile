@@ -10,7 +10,7 @@ ARG jmeterVersion
 ENV JMETER_VERSION ${jmeterVersion}
 ENV JMETER_HOME apache-jmeter-${JMETER_VERSION}
 ENV JMETER_BIN ${JMETER_HOME}/bin
-RUN wget -O /jmeter/apache-jmeter.tgz "http://mirror.its.dal.ca/apache/jmeter/binaries/apache-jmeter-5.2.tgz" \
+RUN wget -O /jmeter/apache-jmeter.tgz "http://mirror.its.dal.ca/apache/jmeter/binaries/apache-jmeter-5.5.tgz" \
 	&& tar xvzf apache-jmeter.tgz
 
 ENV testDir /jmeter/test

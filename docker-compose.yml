@@ -16,10 +16,10 @@ services:
         build:
             context: "jmeter"
             args:
-            - jmeterVersion=5.2
+            - jmeterVersion=5.5
         environment:
             - JMETER_TEST=default_test_plan.jmx
-            - JMETER_WEBURL=https://f8fio7n9jd.execute-api.us-east-1.amazonaws.com
+            - JMETER_WEBURL=https://google.com
             - JMETER_THREADS=5
             - JMETER_DURATION=1200
             - JMETER_RAMPUP=30
